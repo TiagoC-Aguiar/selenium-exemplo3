@@ -37,5 +37,14 @@ public class DropDownPart2 {
 		int totalDias = listaDias.size() - 1;
 		System.out.println("total de dias: " + totalDias);
 		
+		for(int i=0;i<listaDias.size();i++) {
+			String diaVal = listaDias.get(i).getText();
+			System.out.println(diaVal);
+			if(diaVal.equals("15")) {
+				listaDias.get(i).click();
+				break;
+			}
+		}
+		
 	}
 }
