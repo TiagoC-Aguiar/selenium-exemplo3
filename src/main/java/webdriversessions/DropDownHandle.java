@@ -10,7 +10,7 @@ public class DropDownHandle {
 
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.chrome.driver", "/home/tiago/Drivers/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/home/$HOME/Drivers/chromedriver");
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get("http://www.facebook.com");
@@ -18,15 +18,6 @@ public class DropDownHandle {
 		WebElement dia = driver.findElement(By.id("day"));
 		WebElement mes = driver.findElement(By.id("month"));
 		WebElement ano = driver.findElement(By.id("year"));
-		
-//		Select select = new Select(dia);
-//		select.selectByVisibleText("11");
-//
-//		Select select1 = new Select(mes);
-//		select1.selectByValue("8");
-//
-//		Select select2 = new Select(ano);
-//		select2.selectByVisibleText("1990");
 		
 		String dob = "13-10-1992";
 		String dobArr[] = dob.split("-");
